@@ -334,12 +334,12 @@ body {
 .content-section {
     display: block;
     border-bottom: solid 1px #dde3e6;
-    padding: 30px;
+    padding: 20px;
     overflow: hidden;
     background-color: #f5f7f8;
 }
 
-.content-section.introduction {
+.content-section.header {
     background-image: linear-gradient(to left, #2bc0ec, #1b81d7);
     color: #ffffff;
 }
@@ -374,18 +374,18 @@ body {
 }
 
 /* Demos */
-.implementation {
+.body {
     background-color: #FFFFFF;
     overflow: visible;
 }
-.implementation > h3 {
+.body > h3 {
     margin-top: 30px;
     color: #5C666A;
 }
-.implementation h3.first {
+.body h3.first {
     margin-top: 0px !important;
 }
-.implementation h4 {
+.body h4 {
     color: #5C666A;
 }
 
@@ -407,35 +407,35 @@ body {
     color: #229be0
 }
 
-/* Documentation Section */
-.documentation .ui-tabview-panel {
+/* footer Section */
+.footer .ui-tabview-panel {
     color: #404C51 !important;
 }
-.documentation h3 {
+.footer h3 {
     margin-top: 25px;
     margin-bottom: 0px;
     font-size: 24px;
     font-weight: normal;
 }
-.documentation h4 {
+.footer h4 {
     margin-top: 25px;
     margin-bottom: 0px;
     font-size: 20px;
     font-weight: normal;
 }
-.documentation p {
+.footer p {
     font-size: 16px;
     line-height: 24px;
     margin: 10px 0;
     opacity: .90;
 }
-.documentation .doc-tablewrapper {
+.footer .doc-tablewrapper {
     margin: 10px 0;
 }
-.documentation a {
+.footer a {
     color: #0273D4;
 }
-.documentation .btn-viewsource {
+.footer .btn-viewsource {
     background-color: #444444;
     padding: .5em;
     border-radius: 2px;
@@ -445,16 +445,16 @@ body {
     display: inline-block;
     transition: background-color .3s;
 }
-.documentation .btn-viewsource i {
+.footer .btn-viewsource i {
     margin-right: .25em;
 }
 
-.documentation .btn-viewsource:hover {
+.footer .btn-viewsource:hover {
     background-color: #595959;
 }
 
 /* Tabs Source */
-.documentation .ui-tabview {
+.footer .ui-tabview {
     background: none;
     border: 0 none;
     color: #5C666A;
@@ -463,7 +463,7 @@ body {
     -webkit-border-radius: 4px !important;
     border-radius: 4px !important;
 }
-.documentation .ui-tabview .ui-tabview-nav {
+.footer .ui-tabview .ui-tabview-nav {
     background: #1976D2 !important;;
     margin-bottom: -1px;
     padding: 3px 3px 0px 3px !important;
@@ -472,8 +472,8 @@ body {
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
 }
-.documentation .ui-tabview .ui-tabview-nav li,
-.documentation .ui-tabview .ui-tabview-nav li.ui-state-hover {
+.footer .ui-tabview .ui-tabview-nav li,
+.footer .ui-tabview .ui-tabview-nav li.ui-state-hover {
     border: 0px none !important;
     background: #3F94E9 !important;;
     border-color: #3F94E9 !important;;
@@ -481,33 +481,33 @@ body {
     border-top-right-radius: 4px !important;
     border-top-left-radius: 4px !important;
 }
-.documentation .ui-tabview .ui-tabview-nav li a {
+.footer .ui-tabview .ui-tabview-nav li a {
     padding: .5em 1em !important;
 }
-.documentation .ui-tabview .ui-tabview-nav li.tab-doc {
+.footer .ui-tabview .ui-tabview-nav li.tab-doc {
     margin-right: 0;
 }
-.documentation .ui-tabview .ui-tabview-nav li.ui-state-default a {
+.footer .ui-tabview .ui-tabview-nav li.ui-state-default a {
     color: #fff !important;
     font-weight: normal !important;
     text-shadow: none ;
 }
-.documentation .ui-tabview .ui-tabview-nav li.ui-state-active a {
+.footer .ui-tabview .ui-tabview-nav li.ui-state-active a {
     color: #5C666A !important;
     font-weight: normal !important;
 }
-.documentation .ui-tabview .ui-tabview-nav li.ui-state-hover {
+.footer .ui-tabview .ui-tabview-nav li.ui-state-hover {
     box-shadow: none !important;;
 }
-.documentation .ui-tabview .ui-tabview-nav li.ui-tabview-selected {
+.footer .ui-tabview .ui-tabview-nav li.ui-tabview-selected {
     background: #F5F6F7 !important;
 }
-.documentation .ui-tabview .ui-tabview-panels {
+.footer .ui-tabview .ui-tabview-panels {
     border-top: 1px solid #F5F6F7 !important;;
     color: #5C666A !important;
     background: #F5F6F7;
 }
-.documentation .ui-tabview.ui-tabview-top > .ui-tabview-nav li {
+.footer .ui-tabview.ui-tabview-top > .ui-tabview-nav li {
     top: 0px !important;
 }
 
@@ -594,7 +594,7 @@ body {
         text-align: left;
     }
     
-    .home .introduction > div {
+    .home .header > div {
         width: 100%;
     }
     
@@ -744,7 +744,7 @@ a {
   }
 }
 
-/* Introduction */
+/* header */
 .home p {
     line-height: 1.5;
 }
@@ -769,7 +769,7 @@ a {
     background-color: #f9c55a;
 }
 
-.home .introduction {
+.home .header {
     background-color: #1976d2;
     background: url('../images/home/introduction.jpg');
     background-repeat: no-repeat;
@@ -778,24 +778,24 @@ a {
     padding: 80px 30px 80px 50px;
 }
 
-.home .introduction > div {
+.home .header > div {
     padding: 100px 100px 0 100px;
     height: 200px;
 }
 
-.home .introduction img {
+.home .header img {
     width: 480px;
     position: absolute;
     bottom: 0;
     right: 0;
 }
 
-.home .introduction h1 {
+.home .header h1 {
     font-weight: normal;
     margin-bottom: 5px;
 }
 
-.home .introduction h2 {
+.home .header h2 {
     font-weight: bold;
     margin-bottom: 40px;
     margin-top: 0;

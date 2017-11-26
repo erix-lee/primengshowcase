@@ -222,6 +222,18 @@
                 <a [routerLink]="['/codehighlighter']" (click)="menuActive = false">&#8250; CodeHighlighter</a>
                 <a [routerLink]="['/terminal']" (click)="menuActive = false">&#8250; Terminal</a>
             </div>
+            <a id="menu_map" #maptitle [class.active-menuitem]="maptitle.id == activeMenuId"
+                    (click)="activeMenuId = (activeMenuId === maptitle.id ? null : maptitle.id)">
+                    <img src="assets/showcase/images/icons/misc-active.svg" class="layout-menu-icon-active"/>
+                    <img src="assets/showcase/images/icons/misc.svg" class="layout-menu-icon-inactive"/>
+                    <span>地图</span>
+            </a>
+            <div [ngClass]="{'submenushow': (maptitle.id == activeMenuId), 'submenuhide': (maptitle.id != activeMenuId)}">
+                <a (click)="menuActive = false">&#8250; 百度</a>
+                <a (click)="menuActive = false">&#8250; 高德</a>
+                <a (click)="menuActive = false">&#8250; QQ</a>
+
+            </div>
         </div>
     </div>
     

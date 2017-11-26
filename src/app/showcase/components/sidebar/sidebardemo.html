@@ -1,11 +1,11 @@
-<div class="content-section introduction">
+<div class="content-section header">
     <div>
         <span class="feature-title">Sidebar</span>
         <span>Sidebar is a panel component displayed as an overlay.</span>
     </div>
 </div>
 
-<div class="content-section implementation">
+<div class="content-section body">
     <p-sidebar [(visible)]="visibleSidebar1" [baseZIndex]="10000">
         <h1 style="font-weight:normal">Left Sidebar</h1>
         <button pButton type="button" (click)="visibleSidebar1 = false" label="Save" class="ui-button-success"></button>
@@ -43,7 +43,7 @@
     <button pButton type="button" (click)="visibleSidebar5 = true" icon="fa-arrows-alt"></button>    
 </div>
 
-<div class="content-section documentation">
+<div class="content-section footer">
     <p-tabView effect="fade">
         <p-tabPanel header="Documentation">
             <h3>Import</h3>
