@@ -1,5 +1,5 @@
 import { Component, Input, Output, EventEmitter, OnInit, OnChanges, SimpleChange, ElementRef } from '@angular/core';
-declare var $: any;
+
 
 @Component({
     selector: 'app-navsearch',
@@ -15,18 +15,7 @@ export class NavsearchComponent implements OnInit, OnChanges {
     constructor(public elem: ElementRef) { }
 
     ngOnInit() {
-        $(document)
-            .on('keyup', event => {
-                if (event.keyCode === 27) {// ESC
-                    this.closeNavSearch();
-                }
-            })
-            .on('click', event => {
-                if (!$.contains(this.elem.nativeElement, event.target)) {
-                    this.closeNavSearch();
-                }
-            })
-            ;
+
     }
 
     closeNavSearch() {

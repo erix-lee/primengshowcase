@@ -20,9 +20,9 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 })
 export class LayoutComponent implements OnInit {
     menuActive: boolean;
-    
-        activeMenuId: string;
-        themes: any;
+
+    activeMenuId: string;
+    themes: any;
     constructor(private router: Router) {
         this.themes = ['omega', 'cupertino', 'cruze', 'darkness', 'flick', 'home', 'kasper', 'lightness', 'ludvig', 'pepper-Grinder'
             , 'redmond', 'rocket', 'south-Street', 'start', 'trontastic', 'voclain']
