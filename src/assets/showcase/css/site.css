@@ -34,7 +34,7 @@ body {
     overflow-y: auto;
     font-family: 'Roboto', "Trebuchet MS", Arial, Helvetica, sans-serif;
     font-weight: normal;
-    color: #404C51;
+    color: #333;
     -webkit-font-smoothing: antialiased;
     font-size: 1em;
 }
@@ -44,7 +44,7 @@ body {
     box-sizing: border-box;
     display: block;
     padding: 0;
-    height: 70px;
+    height: 64px;
     box-sizing: border-box;
     position: fixed;
     top: 0;
@@ -185,8 +185,8 @@ body {
 #layout-sidebar {
     position: fixed;
     left: 0;
-    top: 70px;
-    height: calc(100% - 70px);
+    top: 64px;
+    height: calc(100% - 60px);
     background-color: #ffffff;
     overflow-x: hidden;
     overflow-y: auto;
@@ -315,7 +315,7 @@ body {
 
 #layout-content {
     margin-left: 300px;
-    padding-top: 70px;
+    padding-top: 64px;
     background-color: #ffffff;
 }
 
@@ -587,7 +587,7 @@ body {
     
     #layout-content {
         margin-left: 0;
-        padding-top: 100px;
+        padding-top: 92px;
     }
     
     .topbar-menu > li.topbar-menu-themes > ul {
