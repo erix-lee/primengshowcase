@@ -25,10 +25,10 @@ export class AppComponent implements OnInit {
     menuActive: boolean;
 
     activeMenuId: string;
-    constructor(
-
-        private router: Router,
-    ) {
+    themes: any;
+    constructor(private router: Router) {
+        this.themes = ['omega', 'cupertino', 'cruze', 'darkness', 'flick', 'home', 'kasper', 'lightness', 'ludvig', 'pepper-Grinder'
+            , 'redmond', 'rocket', 'south-Street', 'start', 'trontastic', 'voclain']
     }
     changeTheme(event: Event, theme: string) {
         let themeLink: HTMLLinkElement = <HTMLLinkElement>document.getElementById('theme-css');
@@ -43,10 +43,10 @@ export class AppComponent implements OnInit {
     ngOnInit() {
         this.router.events
             .subscribe((event) => {
-                console.log( event);
+                console.log(event);
                 if (event instanceof NavigationEnd) { // 当导航成功结束时执行
                     window.scrollTo(0, 0);
-                   
+
                 }
             });
     }
