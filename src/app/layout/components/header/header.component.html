@@ -1,0 +1,24 @@
+<div id="layout-topbar">
+    <a class="menu-button" (click)="onMenuButtonClick($event)">
+        <i class="fa fa-bars"></i>
+    </a>
+    
+    <a  class="logo" [routerLink]="['/']">
+        <img alt="logo" src="assets/showcase/images/logo.png" />
+    </a>
+    
+    <ul class="topbar-menu">
+        <li>
+            <a href="#" [routerLink]="['/setup']">GET STARTED</a>
+        </li>
+        <li class="topbar-menu-themes">
+            <a >主题</a>
+            <ul> 
+
+                <li *ngFor="let theme of themes"><a href="#" (click)="changeTheme($event, theme)"><span class="ui-text">{{theme}}</span></a></li>
+                
+            </ul>
+        </li>
+
+    </ul>
+</div>

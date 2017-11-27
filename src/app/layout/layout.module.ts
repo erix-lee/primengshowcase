@@ -1,40 +1,20 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
+
+import { LayoutRoutingModule } from './layout-routing.module';
 import { LayoutComponent } from './layout.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
-import { HeaderComponent } from './header/header.component';
-import { NavsearchComponent } from './header/navsearch/navsearch.component';
-import { OffsidebarComponent } from './offsidebar/offsidebar.component';
-import { UserblockComponent } from './sidebar/userblock/userblock.component';
-import { UserblockService } from './sidebar/userblock/userblock.service';
-import { FooterComponent } from './footer/footer.component';
-
-
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
     imports: [
-   
+        CommonModule,
+        LayoutRoutingModule,
+        TranslateModule,
+       
     ],
-    providers: [
-        UserblockService
-    ],
-    declarations: [
-        LayoutComponent,
-        SidebarComponent,
-        UserblockComponent,
-        HeaderComponent,
-        NavsearchComponent,
-        OffsidebarComponent,
-        FooterComponent
-    ],
-    exports: [
-        LayoutComponent,
-        SidebarComponent,
-        UserblockComponent,
-        HeaderComponent,
-        NavsearchComponent,
-        OffsidebarComponent,
-        FooterComponent
-    ]
+    declarations: [LayoutComponent, SidebarComponent, HeaderComponent]
 })
-export class LayoutModule { }
+export class LayoutModule {}
