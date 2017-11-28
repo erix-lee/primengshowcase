@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 
-const themeA = require('../../shared/styles/themes/theme-a.scss');
-const themeB = require('../../shared/styles/themes/theme-b.scss');
-const themeC = require('../../shared/styles/themes/theme-c.scss');
-const themeD = require('../../shared/styles/themes/theme-d.scss');
-const themeE = require('../../shared/styles/themes/theme-e.scss');
-const themeF = require('../../shared/styles/themes/theme-f.scss');
-const themeG = require('../../shared/styles/themes/theme-g.scss');
-const themeH = require('../../shared/styles/themes/theme-h.scss');
+const themeA = ('../../shared/styles/themes/theme-a.scss');
+const themeB = ('../../shared/styles/themes/theme-b.scss');
+const themeC = ('../../shared/styles/themes/theme-c.scss');
+const themeD = ('../../shared/styles/themes/theme-d.scss');
+const themeE = ('../../shared/styles/themes/theme-e.scss');
+const themeF = ('../../shared/styles/themes/theme-f.scss');
+const themeG = ('../../shared/styles/themes/theme-g.scss');
+const themeH = ('../../shared/styles/themes/theme-h.scss');
 
 @Injectable()
 export class ThemesService {

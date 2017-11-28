@@ -67,6 +67,7 @@
     "zone.js": "0.8.18"
   },
   "dependencies": {
+    "materialcss": "^0.3.3",
     "primeng": "^5.0.2",
     "webpack": "^3.8.1"
   }

@@ -7,7 +7,7 @@ import { NavsearchComponent } from './header/navsearch/navsearch.component';
 import { OffsidebarComponent } from './offsidebar/offsidebar.component';
 import { UserblockComponent } from './sidebar/userblock/userblock.component';
 import { UserblockService } from './sidebar/userblock/userblock.service';
-import { FooterComponent } from './footer/footer.component';
+
 
 
 
@@ -25,7 +25,7 @@ import { FooterComponent } from './footer/footer.component';
         HeaderComponent,
         NavsearchComponent,
         OffsidebarComponent,
-        FooterComponent
+     
     ],
     exports: [
         LayoutComponent,
@@ -34,7 +34,7 @@ import { FooterComponent } from './footer/footer.component';
         HeaderComponent,
         NavsearchComponent,
         OffsidebarComponent,
-        FooterComponent
+ 
     ]
 })
 export class LayoutModule { }
