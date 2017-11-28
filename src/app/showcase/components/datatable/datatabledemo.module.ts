@@ -23,18 +23,18 @@ import {DataTableSortDemo} from './datatablesortdemo';
 import {DataTableTemplatingDemo} from './datatabletemplatingdemo';
 import {DataTableSubmenu} from './datatablesubmenu';
 import {DatatableDemoRoutingModule} from './datatabledemo-routing.module';
-import {DataTableModule} from 'primeng/components/datatable/datatable';
-import {ButtonModule} from 'primeng/components/button/button';
-import {DropdownModule} from 'primeng/components/dropdown/dropdown';
-import {CalendarModule} from 'primeng/components/calendar/calendar';
-import {InputTextModule} from 'primeng/components/inputtext/inputtext';
-import {ContextMenuModule} from 'primeng/components/contextmenu/contextmenu';
-import {DialogModule} from 'primeng/components/dialog/dialog';
-import {SliderModule} from 'primeng/components/slider/slider';
-import {MultiSelectModule} from 'primeng/components/multiselect/multiselect';
-import {GrowlModule} from 'primeng/components/growl/growl';
-import {TabViewModule} from 'primeng/components/tabview/tabview';
-import {CodeHighlighterModule} from 'primeng/components/codehighlighter/codehighlighter';
+import {DataTableModule} from '../../../components/datatable/datatable';
+import {ButtonModule} from '../../../components/button/button';
+import {DropdownModule} from '../../../components/dropdown/dropdown';
+import {CalendarModule} from '../../../components/calendar/calendar';
+import {InputTextModule} from '../../../components/inputtext/inputtext';
+import {ContextMenuModule} from '../../../components/contextmenu/contextmenu';
+import {DialogModule} from '../../../components/dialog/dialog';
+import {SliderModule} from '../../../components/slider/slider';
+import {MultiSelectModule} from '../../../components/multiselect/multiselect';
+import {GrowlModule} from '../../../components/growl/growl';
+import {TabViewModule} from '../../../components/tabview/tabview';
+import {CodeHighlighterModule} from '../../../components/codehighlighter/codehighlighter';
 
 @NgModule({
 	imports: [

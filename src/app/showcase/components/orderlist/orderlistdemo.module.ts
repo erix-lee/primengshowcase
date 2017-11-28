@@ -2,9 +2,9 @@ import {NgModule}     from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {OrderListDemo} from './orderlistdemo';
 import {OrderListDemoRoutingModule} from './orderlistdemo-routing.module';
-import {OrderListModule} from 'primeng/components/orderlist/orderlist';
-import {TabViewModule} from 'primeng/components/tabview/tabview';
-import {CodeHighlighterModule} from 'primeng/components/codehighlighter/codehighlighter';
+import {OrderListModule} from '../../../components/orderlist/orderlist';
+import {TabViewModule} from '../../../components/tabview/tabview';
+import {CodeHighlighterModule} from '../../../components/codehighlighter/codehighlighter';
 
 @NgModule({
 	imports: [

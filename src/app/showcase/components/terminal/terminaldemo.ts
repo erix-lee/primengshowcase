@@ -1,5 +1,5 @@
 import {Component,OnDestroy} from '@angular/core';
-import {TerminalService} from 'primeng/components/terminal/terminalservice';
+import {TerminalService} from '../../../components/terminal/terminalservice';
 import {Subscription}   from 'rxjs/Subscription';
 
 @Component({

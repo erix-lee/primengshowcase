@@ -2,11 +2,11 @@ import {NgModule}     from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {CarouselDemo} from './carouseldemo';
 import {CarouselDemoRoutingModule} from './carouseldemo-routing.module';
-import {CarouselModule} from 'primeng/components/carousel/carousel';
-import {ButtonModule} from 'primeng/components/button/button';
-import {GrowlModule} from 'primeng/components/growl/growl';
-import {TabViewModule} from 'primeng/components/tabview/tabview';
-import {CodeHighlighterModule} from 'primeng/components/codehighlighter/codehighlighter';
+import {CarouselModule} from '../../../components/carousel/carousel';
+import {ButtonModule} from '../../../components/button/button';
+import {GrowlModule} from '../../../components/growl/growl';
+import {TabViewModule} from '../../../components/tabview/tabview';
+import {CodeHighlighterModule} from '../../../components/codehighlighter/codehighlighter';
 
 @NgModule({
 	imports: [

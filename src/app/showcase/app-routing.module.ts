@@ -5,7 +5,7 @@ import { HomeComponent } from './components/home/home.component';
 @NgModule({
     imports: [
         RouterModule.forRoot([
-            {path: '', loadChildren: './components/setup/setup.module#SetupModule'},
+            {path: '', component: HomeComponent},
             {path: 'setup', loadChildren: './components/setup/setup.module#SetupModule'},
             {path: 'theming', loadChildren: './components/theming/theming.module#ThemingModule'},
             {path: 'accordion', loadChildren: './components/accordion/accordiondemo.module#AccordionDemoModule'},

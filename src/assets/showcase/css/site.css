@@ -34,7 +34,7 @@ body {
     overflow-y: auto;
     font-family: 'Roboto', "Trebuchet MS", Arial, Helvetica, sans-serif;
     font-weight: normal;
-    color: #333;
+    color: #404C51;
     -webkit-font-smoothing: antialiased;
     font-size: 1em;
 }
@@ -44,7 +44,7 @@ body {
     box-sizing: border-box;
     display: block;
     padding: 0;
-    height: 64px;
+    height: 70px;
     box-sizing: border-box;
     position: fixed;
     top: 0;
@@ -185,8 +185,8 @@ body {
 #layout-sidebar {
     position: fixed;
     left: 0;
-    top: 64px;
-    height: calc(100% - 60px);
+    top: 70px;
+    height: calc(100% - 70px);
     background-color: #ffffff;
     overflow-x: hidden;
     overflow-y: auto;
@@ -207,14 +207,16 @@ body {
 }
 
 #layout-sidebar .layout-menu > a.active-menuitem {
-    background-color: #ffffff !important;
+    background-color: #ffffff;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-
+#layout-sidebar .layout-menu > div.submenushow,#layout-sidebar .layout-menu > a.active-menuitem {
+    background-color: #EEE !important; 
+}
 #layout-sidebar .layout-menu > a.active-menuitem > span {
     color: #1b82d7;
 }
@@ -315,7 +317,7 @@ body {
 
 #layout-content {
     margin-left: 300px;
-    padding-top: 64px;
+    padding-top: 70px;
     background-color: #ffffff;
 }
 
@@ -334,12 +336,12 @@ body {
 .content-section {
     display: block;
     border-bottom: solid 1px #dde3e6;
-    padding: 20px;
+    padding: 30px;
     overflow: hidden;
     background-color: #f5f7f8;
 }
 
-.content-section.header {
+.content-section.introduction {
     background-image: linear-gradient(to left, #2bc0ec, #1b81d7);
     color: #ffffff;
 }
@@ -374,18 +376,18 @@ body {
 }
 
 /* Demos */
-.body {
+.implementation {
     background-color: #FFFFFF;
     overflow: visible;
 }
-.body > h3 {
+.implementation > h3 {
     margin-top: 30px;
     color: #5C666A;
 }
-.body h3.first {
+.implementation h3.first {
     margin-top: 0px !important;
 }
-.body h4 {
+.implementation h4 {
     color: #5C666A;
 }
 
@@ -407,35 +409,35 @@ body {
     color: #229be0
 }
 
-/* footer Section */
-.footer .ui-tabview-panel {
+/* Documentation Section */
+.documentation .ui-tabview-panel {
     color: #404C51 !important;
 }
-.footer h3 {
+.documentation h3 {
     margin-top: 25px;
     margin-bottom: 0px;
     font-size: 24px;
     font-weight: normal;
 }
-.footer h4 {
+.documentation h4 {
     margin-top: 25px;
     margin-bottom: 0px;
     font-size: 20px;
     font-weight: normal;
 }
-.footer p {
+.documentation p {
     font-size: 16px;
     line-height: 24px;
     margin: 10px 0;
     opacity: .90;
 }
-.footer .doc-tablewrapper {
+.documentation .doc-tablewrapper {
     margin: 10px 0;
 }
-.footer a {
+.documentation a {
     color: #0273D4;
 }
-.footer .btn-viewsource {
+.documentation .btn-viewsource {
     background-color: #444444;
     padding: .5em;
     border-radius: 2px;
@@ -445,16 +447,16 @@ body {
     display: inline-block;
     transition: background-color .3s;
 }
-.footer .btn-viewsource i {
+.documentation .btn-viewsource i {
     margin-right: .25em;
 }
 
-.footer .btn-viewsource:hover {
+.documentation .btn-viewsource:hover {
     background-color: #595959;
 }
 
 /* Tabs Source */
-.footer .ui-tabview {
+.documentation .ui-tabview {
     background: none;
     border: 0 none;
     color: #5C666A;
@@ -463,7 +465,7 @@ body {
     -webkit-border-radius: 4px !important;
     border-radius: 4px !important;
 }
-.footer .ui-tabview .ui-tabview-nav {
+.documentation .ui-tabview .ui-tabview-nav {
     background: #1976D2 !important;;
     margin-bottom: -1px;
     padding: 3px 3px 0px 3px !important;
@@ -472,8 +474,8 @@ body {
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
 }
-.footer .ui-tabview .ui-tabview-nav li,
-.footer .ui-tabview .ui-tabview-nav li.ui-state-hover {
+.documentation .ui-tabview .ui-tabview-nav li,
+.documentation .ui-tabview .ui-tabview-nav li.ui-state-hover {
     border: 0px none !important;
     background: #3F94E9 !important;;
     border-color: #3F94E9 !important;;
@@ -481,33 +483,33 @@ body {
     border-top-right-radius: 4px !important;
     border-top-left-radius: 4px !important;
 }
-.footer .ui-tabview .ui-tabview-nav li a {
+.documentation .ui-tabview .ui-tabview-nav li a {
     padding: .5em 1em !important;
 }
-.footer .ui-tabview .ui-tabview-nav li.tab-doc {
+.documentation .ui-tabview .ui-tabview-nav li.tab-doc {
     margin-right: 0;
 }
-.footer .ui-tabview .ui-tabview-nav li.ui-state-default a {
+.documentation .ui-tabview .ui-tabview-nav li.ui-state-default a {
     color: #fff !important;
     font-weight: normal !important;
     text-shadow: none ;
 }
-.footer .ui-tabview .ui-tabview-nav li.ui-state-active a {
+.documentation .ui-tabview .ui-tabview-nav li.ui-state-active a {
     color: #5C666A !important;
     font-weight: normal !important;
 }
-.footer .ui-tabview .ui-tabview-nav li.ui-state-hover {
+.documentation .ui-tabview .ui-tabview-nav li.ui-state-hover {
     box-shadow: none !important;;
 }
-.footer .ui-tabview .ui-tabview-nav li.ui-tabview-selected {
+.documentation .ui-tabview .ui-tabview-nav li.ui-tabview-selected {
     background: #F5F6F7 !important;
 }
-.footer .ui-tabview .ui-tabview-panels {
+.documentation .ui-tabview .ui-tabview-panels {
     border-top: 1px solid #F5F6F7 !important;;
     color: #5C666A !important;
     background: #F5F6F7;
 }
-.footer .ui-tabview.ui-tabview-top > .ui-tabview-nav li {
+.documentation .ui-tabview.ui-tabview-top > .ui-tabview-nav li {
     top: 0px !important;
 }
 
@@ -587,14 +589,14 @@ body {
     
     #layout-content {
         margin-left: 0;
-        padding-top: 92px;
+        padding-top: 100px;
     }
     
     .topbar-menu > li.topbar-menu-themes > ul {
         text-align: left;
     }
     
-    .home .header > div {
+    .home .introduction > div {
         width: 100%;
     }
     
@@ -744,7 +746,7 @@ a {
   }
 }
 
-/* header */
+/* Introduction */
 .home p {
     line-height: 1.5;
 }
@@ -769,7 +771,7 @@ a {
     background-color: #f9c55a;
 }
 
-.home .header {
+.home .introduction {
     background-color: #1976d2;
     background: url('../images/home/introduction.jpg');
     background-repeat: no-repeat;
@@ -778,24 +780,24 @@ a {
     padding: 80px 30px 80px 50px;
 }
 
-.home .header > div {
+.home .introduction > div {
     padding: 100px 100px 0 100px;
     height: 200px;
 }
 
-.home .header img {
+.home .introduction img {
     width: 480px;
     position: absolute;
     bottom: 0;
     right: 0;
 }
 
-.home .header h1 {
+.home .introduction h1 {
     font-weight: normal;
     margin-bottom: 5px;
 }
 
-.home .header h2 {
+.home .introduction h2 {
     font-weight: bold;
     margin-bottom: 40px;
     margin-top: 0;

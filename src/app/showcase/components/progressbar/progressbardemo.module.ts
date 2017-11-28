@@ -2,10 +2,10 @@ import {NgModule}     from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {ProgressBarDemo} from './progressbardemo';
 import {ProgressBarDemoRoutingModule} from './progressbardemo-routing.module';
-import {ProgressBarModule} from 'primeng/components/progressbar/progressbar';
-import {GrowlModule} from 'primeng/components/growl/growl';
-import {TabViewModule} from 'primeng/components/tabview/tabview';
-import {CodeHighlighterModule} from 'primeng/components/codehighlighter/codehighlighter';
+import {ProgressBarModule} from '../../../components/progressbar/progressbar';
+import {GrowlModule} from '../../../components/growl/growl';
+import {TabViewModule} from '../../../components/tabview/tabview';
+import {CodeHighlighterModule} from '../../../components/codehighlighter/codehighlighter';
 
 @NgModule({
 	imports: [

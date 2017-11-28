@@ -2,10 +2,10 @@ import {NgModule}     from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {SlideMenuDemo} from './slidemenudemo';
 import {SlideMenuDemoRoutingModule} from './slidemenudemo-routing.module';
-import {SlideMenuModule} from 'primeng/components/slidemenu/slidemenu';
-import {ButtonModule} from 'primeng/components/button/button';
-import {TabViewModule} from 'primeng/components/tabview/tabview';
-import {CodeHighlighterModule} from 'primeng/components/codehighlighter/codehighlighter';
+import {SlideMenuModule} from '../../../components/slidemenu/slidemenu';
+import {ButtonModule} from '../../../components/button/button';
+import {TabViewModule} from '../../../components/tabview/tabview';
+import {CodeHighlighterModule} from '../../../components/codehighlighter/codehighlighter';
 
 @NgModule({
 	imports: [

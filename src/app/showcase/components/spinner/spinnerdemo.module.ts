@@ -3,9 +3,9 @@ import {CommonModule} from '@angular/common'
 import {FormsModule}  from '@angular/forms';;
 import {SpinnerDemo} from './spinnerdemo';
 import {SpinnerDemoRoutingModule} from './spinnerdemo-routing.module';
-import {SpinnerModule} from 'primeng/components/spinner/spinner';
-import {TabViewModule} from 'primeng/components/tabview/tabview';
-import {CodeHighlighterModule} from 'primeng/components/codehighlighter/codehighlighter';
+import {SpinnerModule} from '../../../components/spinner/spinner';
+import {TabViewModule} from '../../../components/tabview/tabview';
+import {CodeHighlighterModule} from '../../../components/codehighlighter/codehighlighter';
 
 @NgModule({
 	imports: [

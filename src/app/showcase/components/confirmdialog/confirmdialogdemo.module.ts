@@ -2,11 +2,11 @@ import {NgModule}     from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {ConfirmDialogDemo} from './confirmdialogdemo';
 import {ConfirmDialogDemoRoutingModule} from './confirmdialogdemo-routing.module';
-import {ConfirmDialogModule} from 'primeng/components/confirmdialog/confirmdialog';
-import {ButtonModule} from 'primeng/components/button/button';
-import {GrowlModule} from 'primeng/components/growl/growl';
-import {TabViewModule} from 'primeng/components/tabview/tabview';
-import {CodeHighlighterModule} from 'primeng/components/codehighlighter/codehighlighter';
+import {ConfirmDialogModule} from '../../../components/confirmdialog/confirmdialog';
+import {ButtonModule} from '../../../components/button/button';
+import {GrowlModule} from '../../../components/growl/growl';
+import {TabViewModule} from '../../../components/tabview/tabview';
+import {CodeHighlighterModule} from '../../../components/codehighlighter/codehighlighter';
 
 @NgModule({
 	imports: [

@@ -1,5 +1,5 @@
 import {Component,OnInit,EventEmitter} from '@angular/core';
-import {MenuItem} from 'primeng/components/common/api';
+import {MenuItem} from '../../../components/common/api';
 
 @Component({
     templateUrl: './breadcrumbdemo.html'

@@ -1,11 +1,11 @@
-<div class="content-section header">
+<div class="content-section introduction">
     <div>
         <span class="feature-title">Sidebar</span>
         <span>Sidebar is a panel component displayed as an overlay.</span>
     </div>
 </div>
 
-<div class="content-section body">
+<div class="content-section implementation">
     <p-sidebar [(visible)]="visibleSidebar1" [baseZIndex]="10000">
         <h1 style="font-weight:normal">Left Sidebar</h1>
         <button pButton type="button" (click)="visibleSidebar1 = false" label="Save" class="ui-button-success"></button>
@@ -43,7 +43,7 @@
     <button pButton type="button" (click)="visibleSidebar5 = true" icon="fa-arrows-alt"></button>    
 </div>
 
-<div class="content-section footer">
+<div class="content-section documentation">
     <p-tabView effect="fade">
         <p-tabPanel header="Documentation">
             <h3>Import</h3>
@@ -261,7 +261,7 @@ Content
         </p-tabPanel>
 
         <p-tabPanel header="Source">
-            <a href="https://github.com/erix-lee/primengshowcase/tree/master/src/app/showcase/components/sidebar" class="btn-viewsource" target="_blank">
+            <a href="https://github.com/primefaces/primeng/tree/master/src/app/showcase/components/sidebar" class="btn-viewsource" target="_blank">
                 <i class="fa fa-github"></i>
                 <span>View on GitHub</span>
             </a>

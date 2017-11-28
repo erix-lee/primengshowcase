@@ -1,5 +1,5 @@
 import {Component,OnInit} from '@angular/core';
-import {Message} from 'primeng/components/common/api';
+import {Message} from '../../../components/common/api';
 
 declare var google: any;
 

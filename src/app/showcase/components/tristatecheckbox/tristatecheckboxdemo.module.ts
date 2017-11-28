@@ -3,9 +3,9 @@ import {CommonModule} from '@angular/common';
 import {FormsModule}    from '@angular/forms';
 import {TriStateCheckboxDemo} from './tristatecheckboxdemo';
 import {TriStateCheckboxDemoRoutingModule} from './tristatecheckboxdemo-routing.module';
-import {TriStateCheckboxModule} from 'primeng/components/tristatecheckbox/tristatecheckbox';
-import {TabViewModule} from 'primeng/components/tabview/tabview';
-import {CodeHighlighterModule} from 'primeng/components/codehighlighter/codehighlighter';
+import {TriStateCheckboxModule} from '../../../components/tristatecheckbox/tristatecheckbox';
+import {TabViewModule} from '../../../components/tabview/tabview';
+import {CodeHighlighterModule} from '../../../components/codehighlighter/codehighlighter';
 
 @NgModule({
 	imports: [

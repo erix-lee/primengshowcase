@@ -3,9 +3,9 @@ import {CommonModule} from '@angular/common';
 import {FormsModule}    from '@angular/forms'
 import {CalendarDemo} from './calendardemo';
 import {CalendarDemoRoutingModule} from './calendardemo-routing.module';
-import {CalendarModule} from 'primeng/components/calendar/calendar';
-import {TabViewModule} from 'primeng/components/tabview/tabview';
-import {CodeHighlighterModule} from 'primeng/components/codehighlighter/codehighlighter';
+import {CalendarModule} from '../../../components/calendar/calendar';
+import {TabViewModule} from '../../../components/tabview/tabview';
+import {CodeHighlighterModule} from '../../../components/codehighlighter/codehighlighter';
 
 @NgModule({
 	imports: [

@@ -38,7 +38,7 @@ export class CalendarDemo {
     invalidDates: Array<Date>;
     
     es: any;
-    cn:any;
+
     ngOnInit() {
         this.es = {
         	firstDayOfWeek: 1,
@@ -50,17 +50,7 @@ export class CalendarDemo {
             today: 'Hoy',
             clear: 'Borrar'
         };
-
-         this.cn = {
-        	firstDayOfWeek: 1,
-        	dayNames: [ "周日","周一","martes","miércoles","jueves","viernes","sábado" ],
-        	dayNamesShort: [ "dom","lun","mar","mié","jue","vie","sáb" ],
-        	dayNamesMin: [ "日","一","二","三","四","五","六" ],
-            monthNames: [ "元月","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre" ],
-        	monthNamesShort: [ "ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic" ],
-            today: 'Hoy',
-            clear: 'Borrar'
-        };
+        
         let today = new Date();
         let month = today.getMonth();
         let year = today.getFullYear();

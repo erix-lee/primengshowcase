@@ -6,12 +6,12 @@ import {DataScrollerInfiniteDemo} from './datascrollerinfinitedemo';
 import {DataScrollerInlineDemo} from './datascrollerinlinedemo';
 import {DataScrollerLoaderDemo} from './datascrollerloaderdemo';
 import {DatascrollerDemoRoutingModule} from './datascrollerdemo-routing.module';
-import {DataScrollerModule} from 'primeng/components/datascroller/datascroller';
-import {DialogModule} from 'primeng/components/dialog/dialog';
-import {ButtonModule} from 'primeng/components/button/button';
-import {GrowlModule} from 'primeng/components/growl/growl';
-import {TabViewModule} from 'primeng/components/tabview/tabview';
-import {CodeHighlighterModule} from 'primeng/components/codehighlighter/codehighlighter';
+import {DataScrollerModule} from '../../../components/datascroller/datascroller';
+import {DialogModule} from '../../../components/dialog/dialog';
+import {ButtonModule} from '../../../components/button/button';
+import {GrowlModule} from '../../../components/growl/growl';
+import {TabViewModule} from '../../../components/tabview/tabview';
+import {CodeHighlighterModule} from '../../../components/codehighlighter/codehighlighter';
 
 @NgModule({
 	imports: [

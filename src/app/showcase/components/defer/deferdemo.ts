@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {Car} from '../../components/domain/car';
 import {CarService} from '../../service/carservice';
-import {Message} from 'primeng/components/common/api';
+import {Message} from '../../../components/common/api';
 
 @Component({
     templateUrl: './deferdemo.html'

@@ -2,9 +2,9 @@ import {NgModule}     from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {InputTextareaDemo} from './inputtextareademo';
 import {InputTextareaDemoRoutingModule} from './inputtextareademo-routing.module';
-import {InputTextareaModule} from 'primeng/components/inputtextarea/inputtextarea';
-import {TabViewModule} from 'primeng/components/tabview/tabview';
-import {CodeHighlighterModule} from 'primeng/components/codehighlighter/codehighlighter';
+import {InputTextareaModule} from '../../../components/inputtextarea/inputtextarea';
+import {TabViewModule} from '../../../components/tabview/tabview';
+import {CodeHighlighterModule} from '../../../components/codehighlighter/codehighlighter';
 
 @NgModule({
 	imports: [

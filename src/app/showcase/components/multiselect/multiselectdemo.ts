@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {SelectItem} from 'primeng/components/common/api';
+import {SelectItem} from '../../../components/common/api';
 
 @Component({
     templateUrl: './multiselectdemo.html'

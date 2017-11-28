@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {OverlayPanel} from 'primeng/components/overlaypanel/overlaypanel';
+import {OverlayPanel} from '../../../components/overlaypanel/overlaypanel';
 import {Car} from '../../components/domain/car';
 import {CarService} from '../../service/carservice';
 

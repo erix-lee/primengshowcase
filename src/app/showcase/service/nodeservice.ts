@@ -3,7 +3,7 @@ import 'rxjs/add/operator/toPromise';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
-import { TreeNode } from 'primeng/components/common/api';
+import { TreeNode } from '../../components/common/api';
 
 @Injectable()
 export class NodeService {

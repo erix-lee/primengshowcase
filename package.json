@@ -69,7 +69,6 @@
   "dependencies": {
     "@ngx-translate/core": "^9.0.1",
     "@ngx-translate/http-loader": "^2.0.0",
-    "primeng": "^5.0.2",
     "webpack": "^3.8.1"
   }
 }
