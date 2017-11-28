@@ -30,6 +30,6 @@ export class OffsidebarComponent implements OnInit {
     }
 
     setLang(value) {
-        this.translator.useLanguage(value);
+        //this.translator.useLanguage(value);
     }
 }
