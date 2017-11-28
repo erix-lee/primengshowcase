@@ -1,9 +1,13 @@
 import { Component, OnInit, Injector } from '@angular/core';
 import { Router } from '@angular/router';
+<<<<<<< HEAD
 declare var $: any;
 
 import { MenuService } from '../../core/menu/menu.service';
 import { SettingsService } from '../../core/settings/settings.service';
+=======
+
+>>>>>>> 68df573e70a5b9fc9ee21a12fd8ced8bbb4340bd
 
 @Component({
     selector: 'app-sidebar',
@@ -15,14 +19,21 @@ export class SidebarComponent implements OnInit {
     menuItems: Array<any>;
     router: Router;
 
+<<<<<<< HEAD
     constructor(public menu: MenuService, public settings: SettingsService, public injector: Injector) {
 
         this.menuItems = menu.getMenu();
+=======
+    constructor( public injector: Injector) {
+
+      
+>>>>>>> 68df573e70a5b9fc9ee21a12fd8ced8bbb4340bd
 
     }
 
     ngOnInit() {
 
+<<<<<<< HEAD
         this.router = this.injector.get(Router);
 
         this.router.events.subscribe((val) => {
@@ -166,4 +177,13 @@ export class SidebarComponent implements OnInit {
     isEnabledHover() {
         return this.settings.layout.asideHover;
     }
+=======
+     
+
+    }
+
+    
+
+    
+>>>>>>> 68df573e70a5b9fc9ee21a12fd8ced8bbb4340bd
 }

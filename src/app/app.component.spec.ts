@@ -1,39 +1,26 @@
-/* tslint:disable:no-unused-variable */
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TestBed, async} from '@angular/core/testing';
 import { AppComponent } from './app.component';
 
+describe('AppComponent', () => {
+    let component: AppComponent;
+    let fixture: ComponentFixture<AppComponent>;
 
-import { CoreModule } from './core/core.module';
-import { LayoutModule } from './layout/layout.module';
+    beforeEach(
+        async(() => {
+            TestBed.configureTestingModule({
+                declarations: [AppComponent]
+            }).compileComponents();
+        })
+    );
 
-import { APP_BASE_HREF } from '@angular/common';
-
-describe('App: Ng2angle', () => {
     beforeEach(() => {
-
-        jasmine.DEFAULT_TIMEOUT_INTERVAL = 60000;
-
-        TestBed.configureTestingModule({
-            declarations: [
-                AppComponent
-            ],
-            imports: [
- 
-                CoreModule,
-                LayoutModule,
-
-            ],
-            providers: [
-                { provide: APP_BASE_HREF, useValue: '/' }
-            ]
-        });
+        fixture = TestBed.createComponent(AppComponent);
+        component = fixture.componentInstance;
+        fixture.detectChanges();
     });
 
-    it('should create the app', async(() => {
-        let fixture = TestBed.createComponent(AppComponent);
-        let app = fixture.debugElement.componentInstance;
-        expect(app).toBeTruthy();
-    }));
-
+    it('should create', () => {
+        expect(component).toBeTruthy();
+    });
 });
