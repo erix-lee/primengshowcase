@@ -3,30 +3,38 @@
         <a href="#" class="menu-button" (click)="onMenuButtonClick($event)">
             <i class="fa fa-bars"></i>
         </a>
-        
-        <a href="#" class="logo" [routerLink]="['/']">
+
+        <a class="logo" [routerLink]="['/']">
             <img alt="logo" src="assets/showcase/images/logo.png" />
         </a>
-        
+
         <ul class="topbar-menu">
             <li>
                 <a href="#" [routerLink]="['/setup']">GET STARTED</a>
             </li>
             <li class="topbar-menu-themes">
-                <a  >THEMES</a>
+
+                <a>主题</a>
                 <ul>
-                    <li *ngFor="let theme of themes"><a href="#" (click)="changeTheme($event, theme)"><span class="ui-text">{{theme}}</span></a></li>
+
+                    <li *ngFor="let theme of themes">
+                        <a href="#" (click)="changeTheme($event, theme)">
+                            <span class="ui-text">
+                                <img src="assets/showcase/images/themeswitcher-{{theme}}.png">{{theme}}</span>
+                        </a>
+                    </li>
                 </ul>
             </li>
 
         </ul>
     </div>
-    
+
     <div id="layout-sidebar" [ngClass]="{'active': menuActive}">
+
         <div class="layout-menu">
             <a id="menu_input" #inputmenutitle [class.active-menuitem]="inputmenutitle.id == activeMenuId" (click)="activeMenuId = (activeMenuId === inputmenutitle.id ? null : inputmenutitle.id)">
-                <img src="assets/showcase/images/icons/input-active.svg" class="layout-menu-icon-active"/>
-                <img src="assets/showcase/images/icons/input.svg" class="layout-menu-icon-inactive"/>
+                <img src="assets/showcase/images/icons/input-active.svg" class="layout-menu-icon-active" />
+                <img src="assets/showcase/images/icons/input.svg" class="layout-menu-icon-inactive" />
                 <span>Input</span>
             </a>
             <div [ngClass]="{submenushow: (inputmenutitle.id == activeMenuId), 'submenuhide': (inputmenutitle.id != activeMenuId)}">
@@ -55,8 +63,8 @@
             </div>
 
             <a id="button_menutitle" #buttonmenutitle [class.active-menuitem]="buttonmenutitle.id == activeMenuId" (click)="activeMenuId = (activeMenuId === buttonmenutitle.id ? null : buttonmenutitle.id)">
-                <img src="assets/showcase/images/icons/button-active.svg" class="layout-menu-icon-active"/>
-                <img src="assets/showcase/images/icons/button.svg" class="layout-menu-icon-inactive"/>
+                <img src="assets/showcase/images/icons/button-active.svg" class="layout-menu-icon-active" />
+                <img src="assets/showcase/images/icons/button.svg" class="layout-menu-icon-inactive" />
                 <span>Button</span>
             </a>
             <div [ngClass]="{'submenushow': (buttonmenutitle.id == activeMenuId), 'submenuhide': (buttonmenutitle.id != activeMenuId)}">
@@ -65,8 +73,8 @@
             </div>
 
             <a id="data_menutitle" #datamenutitle [class.active-menuitem]="datamenutitle.id == activeMenuId" (click)="activeMenuId = (activeMenuId === datamenutitle.id ? null : datamenutitle.id)">
-                <img src="assets/showcase/images/icons/data-active.svg" class="layout-menu-icon-active"/>
-                <img src="assets/showcase/images/icons/data.svg" class="layout-menu-icon-inactive"/>
+                <img src="assets/showcase/images/icons/data-active.svg" class="layout-menu-icon-active" />
+                <img src="assets/showcase/images/icons/data.svg" class="layout-menu-icon-inactive" />
                 <span>Data</span>
             </a>
             <div [ngClass]="{'submenushow': (datamenutitle.id == activeMenuId), 'submenuhide': (datamenutitle.id != activeMenuId)}">
@@ -83,11 +91,13 @@
                 <a [routerLink]="['/schedule']" (click)="menuActive = false">&#9679; Schedule</a>
                 <a [routerLink]="['/tree']" (click)="menuActive = false">&#9679; Tree</a>
                 <a [routerLink]="['/treetable']" (click)="menuActive = false">&#9679; TreeTable</a>
+
+
             </div>
 
             <a id="menu_panel" #panelmenutitle [class.active-menuitem]="panelmenutitle.id == activeMenuId" (click)="activeMenuId = (activeMenuId === panelmenutitle.id ? null : panelmenutitle.id)">
-                <img src="assets/showcase/images/icons/panel-active.svg" class="layout-menu-icon-active"/>
-                <img src="assets/showcase/images/icons/panel.svg" class="layout-menu-icon-inactive"/>
+                <img src="assets/showcase/images/icons/panel-active.svg" class="layout-menu-icon-active" />
+                <img src="assets/showcase/images/icons/panel.svg" class="layout-menu-icon-inactive" />
                 <span>Panel</span>
             </a>
             <div [ngClass]="{'submenushow': (panelmenutitle.id == activeMenuId), 'submenuhide': (panelmenutitle.id != activeMenuId)}">
@@ -100,8 +110,8 @@
             </div>
 
             <a id="menu_overlay" #overlaymenutitle [class.active-menuitem]="overlaymenutitle.id == activeMenuId" (click)="activeMenuId = (activeMenuId === overlaymenutitle.id ? null : overlaymenutitle.id)">
-                <img src="assets/showcase/images/icons/overlay-active.svg" class="layout-menu-icon-active"/>
-                <img src="assets/showcase/images/icons/overlay.svg" class="layout-menu-icon-inactive"/>
+                <img src="assets/showcase/images/icons/overlay-active.svg" class="layout-menu-icon-active" />
+                <img src="assets/showcase/images/icons/overlay.svg" class="layout-menu-icon-inactive" />
                 <span>Overlay</span>
             </a>
             <div [ngClass]="{'submenushow': (overlaymenutitle.id == activeMenuId), 'submenuhide': (overlaymenutitle.id != activeMenuId)}">
@@ -112,10 +122,10 @@
                 <a [routerLink]="['/overlaypanel']" (click)="menuActive = false">&#9679; OverlayPanel</a>
                 <a [routerLink]="['/tooltip']" (click)="menuActive = false">&#9679; Tooltip</a>
             </div>
-            
+
             <a id="menu_file" #filemenutitle [class.active-menuitem]="filemenutitle.id == activeMenuId" (click)="activeMenuId = (activeMenuId === filemenutitle.id ? null : filemenutitle.id)">
-                <img src="assets/showcase/images/icons/file-active.svg" class="layout-menu-icon-active"/>
-                <img src="assets/showcase/images/icons/file.svg" class="layout-menu-icon-inactive"/>
+                <img src="assets/showcase/images/icons/file-active.svg" class="layout-menu-icon-active" />
+                <img src="assets/showcase/images/icons/file.svg" class="layout-menu-icon-inactive" />
                 <span>File</span>
             </a>
             <div [ngClass]="{'submenushow': (filemenutitle.id == activeMenuId), 'submenuhide': (filemenutitle.id != activeMenuId)}">
@@ -123,8 +133,8 @@
             </div>
 
             <a id="menu_menu" #menumenutitle [class.active-menuitem]="menumenutitle.id == activeMenuId" (click)="activeMenuId = (activeMenuId === menumenutitle.id ? null : menumenutitle.id)">
-                <img src="assets/showcase/images/icons/menu-active.svg" class="layout-menu-icon-active"/>
-                <img src="assets/showcase/images/icons/menu.svg" class="layout-menu-icon-inactive"/>
+                <img src="assets/showcase/images/icons/menu-active.svg" class="layout-menu-icon-active" />
+                <img src="assets/showcase/images/icons/menu.svg" class="layout-menu-icon-inactive" />
                 <span>Menu</span>
             </a>
             <div [ngClass]="{'submenushow': (menumenutitle.id == activeMenuId), 'submenuhide': (menumenutitle.id != activeMenuId)}">
@@ -142,8 +152,8 @@
             </div>
 
             <a id="menu_chart" #chartmenutitle [class.active-menuitem]="chartmenutitle.id == activeMenuId" (click)="activeMenuId = (activeMenuId === chartmenutitle.id ? null : chartmenutitle.id)">
-                <img src="assets/showcase/images/icons/charts-active.svg" class="layout-menu-icon-active"/>
-                <img src="assets/showcase/images/icons/charts.svg" class="layout-menu-icon-inactive"/>
+                <img src="assets/showcase/images/icons/charts-active.svg" class="layout-menu-icon-active" />
+                <img src="assets/showcase/images/icons/charts.svg" class="layout-menu-icon-inactive" />
                 <span>Charts</span>
             </a>
             <div [ngClass]="{'submenushow': (chartmenutitle.id == activeMenuId), 'submenuhide': (chartmenutitle.id != activeMenuId)}">
@@ -157,8 +167,8 @@
             </div>
 
             <a id="menu_messages" #messagesmenutitle [class.active-menuitem]="messagesmenutitle.id == activeMenuId" (click)="activeMenuId = (activeMenuId === messagesmenutitle.id ? null : messagesmenutitle.id)">
-                <img src="assets/showcase/images/icons/message-active.svg" class="layout-menu-icon-active"/>
-                <img src="assets/showcase/images/icons/message.svg" class="layout-menu-icon-inactive"/>
+                <img src="assets/showcase/images/icons/message-active.svg" class="layout-menu-icon-active" />
+                <img src="assets/showcase/images/icons/message.svg" class="layout-menu-icon-inactive" />
                 <span>Messages</span>
             </a>
             <div [ngClass]="{'submenushow': (messagesmenutitle.id == activeMenuId), 'submenuhide': (messagesmenutitle.id != activeMenuId)}">
@@ -166,33 +176,31 @@
                 <a [routerLink]="['/growl']" (click)="menuActive = false">&#9679; Growl</a>
             </div>
 
-            <a id="menu_multimedia" #multimediamenutitle [class.active-menuitem]="multimediamenutitle.id == activeMenuId"
-                    (click)="activeMenuId = (activeMenuId === multimediamenutitle.id ? null : multimediamenutitle.id)">
-                    <img src="assets/showcase/images/icons/multimedia-active.svg" class="layout-menu-icon-active"/>
-                    <img src="assets/showcase/images/icons/multimedia.svg" class="layout-menu-icon-inactive"/>
-                    <span>Multimedia</span>
+            <a id="menu_multimedia" #multimediamenutitle [class.active-menuitem]="multimediamenutitle.id == activeMenuId" (click)="activeMenuId = (activeMenuId === multimediamenutitle.id ? null : multimediamenutitle.id)">
+                <img src="assets/showcase/images/icons/multimedia-active.svg" class="layout-menu-icon-active" />
+                <img src="assets/showcase/images/icons/multimedia.svg" class="layout-menu-icon-inactive" />
+                <span>Multimedia</span>
             </a>
             <div [ngClass]="{'submenushow': (multimediamenutitle.id == activeMenuId), 'submenuhide': (multimediamenutitle.id != activeMenuId)}">
                 <a [routerLink]="['/galleria']" (click)="menuActive = false">&#9679; Galleria</a>
             </div>
-            
-            <a id="menu_dnd" #dndmenutitle [class.active-menuitem]="dndmenutitle.id == activeMenuId"
-                    (click)="activeMenuId = (activeMenuId === dndmenutitle.id ? null : dndmenutitle.id)">
-                    <img src="assets/showcase/images/icons/dragdrop-active.svg" class="layout-menu-icon-active"/>
-                    <img src="assets/showcase/images/icons/dragdrop.svg" class="layout-menu-icon-inactive"/>
-                    <span>DragDrop</span>
+
+            <a id="menu_dnd" #dndmenutitle [class.active-menuitem]="dndmenutitle.id == activeMenuId" (click)="activeMenuId = (activeMenuId === dndmenutitle.id ? null : dndmenutitle.id)">
+                <img src="assets/showcase/images/icons/dragdrop-active.svg" class="layout-menu-icon-active" />
+                <img src="assets/showcase/images/icons/dragdrop.svg" class="layout-menu-icon-inactive" />
+                <span>DragDrop</span>
             </a>
             <div [ngClass]="{'submenushow': (dndmenutitle.id == activeMenuId), 'submenuhide': (dndmenutitle.id != activeMenuId)}">
                 <a [routerLink]="['/dragdrop']" (click)="menuActive = false">&#9679; Drag&amp;Drop</a>
             </div>
-            
-            <a id="menu_misc" #misctitle [class.active-menuitem]="misctitle.id == activeMenuId"
-                    (click)="activeMenuId = (activeMenuId === misctitle.id ? null : misctitle.id)">
-                    <img src="assets/showcase/images/icons/misc-active.svg" class="layout-menu-icon-active"/>
-                    <img src="assets/showcase/images/icons/misc.svg" class="layout-menu-icon-inactive"/>
-                    <span>Misc</span>
+
+            <a id="menu_misc" #misctitle [class.active-menuitem]="misctitle.id == activeMenuId" (click)="activeMenuId = (activeMenuId === misctitle.id ? null : misctitle.id)">
+                <img src="assets/showcase/images/icons/misc-active.svg" class="layout-menu-icon-active" />
+                <img src="assets/showcase/images/icons/misc.svg" class="layout-menu-icon-inactive" />
+                <span>Misc</span>
             </a>
             <div [ngClass]="{'submenushow': (misctitle.id == activeMenuId), 'submenuhide': (misctitle.id != activeMenuId)}">
+
                 <a [routerLink]="['/responsive']" (click)="menuActive = false">&#9679; Responsive</a>
                 <a [routerLink]="['/rtl']" (click)="menuActive = false">&#9679; RTL</a>
                 <a [routerLink]="['/defer']" (click)="menuActive = false">&#9679; Defer</a>
@@ -204,11 +212,24 @@
                 <a [routerLink]="['/progressspinner']" (click)="menuActive = false">&#9679; ProgressSpinner</a>
                 <a [routerLink]="['/codehighlighter']" (click)="menuActive = false">&#9679; CodeHighlighter</a>
                 <a [routerLink]="['/terminal']" (click)="menuActive = false">&#9679; Terminal</a>
+
+            </div>
+            <a id="menu_map" #maptitle [class.active-menuitem]="maptitle.id == activeMenuId" (click)="activeMenuId = (activeMenuId === maptitle.id ? null : maptitle.id)">
+                <img src="assets/showcase/images/icons/misc-active.svg" class="layout-menu-icon-active" />
+                <img src="assets/showcase/images/icons/misc.svg" class="layout-menu-icon-inactive" />
+                <span>地图</span>
+            </a>
+            <div [ngClass]="{'submenushow': (maptitle.id == activeMenuId), 'submenuhide': (maptitle.id != activeMenuId)}">
+                <a (click)="menuActive = false">&#8250; 百度</a>
+                <a (click)="menuActive = false">&#8250; 高德</a>
+                <a (click)="menuActive = false">&#8250; QQ</a>
+
             </div>
         </div>
     </div>
-    
+
     <div class="layout-mask" *ngIf="menuActive" (click)="onMenuButtonClick($event)">
+
     </div>
 
     <div id="layout-content">
