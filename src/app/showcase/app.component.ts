@@ -27,11 +27,12 @@ export class AppComponent {
     themes: any;
     constructor(private router: Router) {
         this.themes = ['bootstrap', 'cupertino', 'cruze', 'darkness', 'flick', 'home', 'kasper', 'lightness', 'ludvig', 'omega','pepper-Grinder'
-            , 'redmond', 'rocket', 'south-Street', 'start', 'trontastic', 'voclain']
+            , 'redmond', 'rocket', 'south-street', 'start', 'trontastic', 'voclain']
     }
     changeTheme(event: Event, theme: string) {
         let themeLink: HTMLLinkElement = <HTMLLinkElement> document.getElementById('theme-css');
         themeLink.href = 'assets/components/themes/' + theme + '/theme.css';
+        console.debug("xxx");
         event.preventDefault();
     }
     

@@ -7,6 +7,7 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
+    "build-themes": "node-sass src/assets -o src/assets",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
@@ -67,9 +68,9 @@
     "zone.js": "0.8.18"
   },
   "dependencies": {
-    "materialcss": "^0.3.3",
     "@ngx-translate/core": "^9.0.1",
     "@ngx-translate/http-loader": "^2.0.0",
+    "materialcss": "^0.3.3",
     "webpack": "^3.8.1"
   }
 }

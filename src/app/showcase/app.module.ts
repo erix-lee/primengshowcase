@@ -8,7 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
-
+import {TabViewModule} from '../components/tabview/tabview';
 import { CarService } from './service/carservice';
 import { CountryService } from './service/countryservice';
 import { EventService } from './service/eventservice';
