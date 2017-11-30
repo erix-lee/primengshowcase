@@ -215,7 +215,7 @@ body {
     transition: all 0.5s ease;
 }
 #layout-sidebar .layout-menu > div.submenushow,#layout-sidebar .layout-menu > a.active-menuitem {
-    background-color: #EEE !important; 
+    background-color:#deeefe !important; 
 }
 #layout-sidebar .layout-menu > a.active-menuitem > span {
     color: #1b82d7;
@@ -295,9 +295,9 @@ body {
 }
 
 #layout-sidebar .layout-menu > div a {
-    width: 50%;
-    float: left;
+    display: block;
     padding: 6px;
+    margin: 6px;
     box-sizing: border-box;
     cursor: pointer;
     border-radius: 4px;
@@ -308,6 +308,10 @@ body {
 
 #layout-sidebar .layout-menu > div a:hover {
     background-color: #eeeeee;
+}
+#layout-sidebar .layout-menu > div a.active {
+    background-color: #369;
+    color: #fff;
 }
 
 #layout-sidebar .layout-menu {
